@@ -19,8 +19,8 @@ public class MainController {
         return eventService.getAll();
     }
 
-    @GetMapping("add/{name}")
-    public void add(@PathVariable String name) {
-        eventService.add(name);
+    @GetMapping("add/{val}")
+    public void add(@PathVariable int val) {
+        eventService.add(val);
     }
 }
